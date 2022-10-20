@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Add Person</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/style.css}"/>
+</head>
+<body>
+<div class="container">
+    <h1>Edit book:</h1>
+    <form th:action="@{/editalbum}"
+          th:object="${albumform}" , method="POST">
+        <p>Name:
+            <input type="text" th:field="*{name}" />
+        </p>
+        <p> Author:
+            <input type="text" th:field="*{author}" />
+        </p><p>Name:
+        <input type="text" th:field="*{newName}"/>
+    </p>
+        <p> Author:
+            <input type="text"  th:field="*{NewAuthor}" />
+        </p>
+        <input class ="button-main-page" type="submit" value="Add" />
+    </form>
+</div>
+<div th:if="${errorMessage}" th:utext="${errorMessage}"
+     style="color:red;font-style:italic;">
+</div>
+</body>
