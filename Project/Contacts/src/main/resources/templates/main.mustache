@@ -1,5 +1,25 @@
 <html>
+<head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/></head>
+
 <body>
-    <div>{{some}}</div>
+    <div>
+        <form method="post">
+            <input type="text" name="name" placeholder="Name"/>
+            <input type="text" name="number" placeholder="Input number"/>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+    <div>List of contacts</div>
+    <form method="post" action="filter">
+        <input type="text" name="filter"/>
+        <button type="submit">Find</button>
+    </form>
+    {{#contacts}}
+        <div>
+            <b>{{contactID}}</b>
+            <i>{{contactName}}</i>
+            <span>{{contactNumber}}</span>
+        </div>
+    {{/contacts}}
 </body>
 </html>

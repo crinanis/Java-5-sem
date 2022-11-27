@@ -1,9 +1,9 @@
 package com.example.Contacts.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class ContactsList {
@@ -13,27 +13,35 @@ public class ContactsList {
     private String contactName;
     private String contactNumber;
 
-    public Integer getContactID() {
-        return contactID;
+    public ContactsList(){
+
+    }
+    public ContactsList(String contactName, String contactNumber) {
+        this.contactName = contactName;
+        this.contactNumber = contactNumber;
     }
 
     public void setContactID(Integer contactID) {
         this.contactID = contactID;
     }
 
-    public String getContactName() {
-        return contactName;
+    public Integer getContactID() {
+        return contactID;
     }
 
     public void setContactName(String contactName) {
         this.contactName = contactName;
     }
 
-    public String getContactNumber() {
-        return contactNumber;
+    public String getContactName() {
+        return contactName;
     }
 
     public void setContactNumber(String contactNumber) {
         this.contactNumber = contactNumber;
+    }
+
+    public String getContactNumber() {
+        return contactNumber;
     }
 }
