@@ -1,8 +1,10 @@
 package com.example.Contacts.controller;
 
 import com.example.Contacts.domain.ContactsList;
+import com.example.Contacts.domain.ContactsUsers;
 import com.example.Contacts.repos.ContactsRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -37,9 +39,13 @@ public class MainController {
     }
 
     @PostMapping("/main")
-    public String addContact(@RequestParam String name, @RequestParam String number, Map<String, Object> model){
-        ContactsList contactsList = new ContactsList(name, number);
-        contactsRepo.save(contactsList); // Шаг 1: сохранили данные
+    public String addContact(
+            @AuthenticationPrincipal ContactsUsers user,
+            @RequestParam String name,
+            @RequestParam String number, Map<String, Object> model
+    ){
+        ContactsList newContact = new ContactsList(name, number, user);
+        contactsRepo.save(newContact); // Шаг 1: сохранили данные
 
         Iterable<ContactsList> contacts = contactsRepo.findAll();
         model.put("contacts", contacts); //Шаг 2: взяли данные из репозитория, положили в модель и отдали пользователю

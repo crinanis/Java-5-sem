@@ -1,9 +1,6 @@
 package com.example.Contacts.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class ContactsList {
@@ -12,13 +9,29 @@ public class ContactsList {
     private Integer contactID;
     private String contactName;
     private String contactNumber;
+    @ManyToOne(fetch = FetchType.EAGER) //одному пользователю соответствует много контактов
+    @JoinColumn(name = "userID")
+    private ContactsUsers contactOwner;
 
     public ContactsList(){
 
     }
-    public ContactsList(String contactName, String contactNumber) {
+    public ContactsList(String contactName, String contactNumber, ContactsUsers userLogin) {
+        this.contactOwner = userLogin;
         this.contactName = contactName;
         this.contactNumber = contactNumber;
+    }
+
+    public String getOwnerName() {
+        return contactOwner != null ? contactOwner.getCuserLogin() : "<none>";
+    }
+
+    public void setContactOwner(ContactsUsers userLogin){
+        this.contactOwner = userLogin;
+    }
+
+    public ContactsUsers getContactOwner() {
+        return contactOwner;
     }
 
     public void setContactID(Integer contactID) {
