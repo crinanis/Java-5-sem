@@ -6,6 +6,14 @@
                 <input type="text" name="username" class="form-control" placeholder="User name"/>
             </div>
         </div>
+        <#if isRegisterForm>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Email: </label>
+                <div class="col-sm-6">
+                    <input type="email" name="email" class="form-control" placeholder="some@some.com"/>
+                </div>
+            </div>
+        </#if>
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">Password: </label>
             <div class="col-sm-6">
@@ -14,9 +22,9 @@
         </div>
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
         <#if !isRegisterForm>
-            <a href="/registration">Add new user</a>
+            <a class="text-info" href="/registration" style="margin-left: 590px">Sign up</a>
         </#if>
-        <button class="btn btn-primary" type="submit">
+        <button class="btn btn-primary" type="submit" style="background-color: #7c7698;border: 0;">
             <#if isRegisterForm> Create
             <#else> Sign in
             </#if>
@@ -27,6 +35,6 @@
 <#macro logout>
     <form action="/logout" method="post">
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-        <button class="btn btn-primary" type="submit">Sign out</button>
+        <button style="background-color: #7c7698;border: 0;" class="btn btn-primary" type="submit">Sign out</button>
     </form>
 </#macro>

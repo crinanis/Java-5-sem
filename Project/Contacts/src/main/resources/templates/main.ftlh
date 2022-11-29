@@ -5,12 +5,12 @@
         <form method="get" action="/main" class="form-inline">
             <input class="form-control" type="text" name="filter" value="${filter?if_exists}"
                    placeholder="Search by tag"/>
-            <button class="btn btn-primary ml-2" type="submit">Search</button>
+            <button class="btn btn-primary ml-2" type="submit" style="background-color: #7c7698;border: 0;">Search</button>
         </form>
     </div>
 
     <a class="btn btn-primary mt-2 mb-2" data-toggle="collapse" href="#collapseExample" role="button"
-       aria-expanded="false">
+       aria-expanded="false" style="background-color: #7c7698;border: 0;">
         Add new contact
     </a>
     <div class="collapse" id="collapseExample">
@@ -30,7 +30,7 @@
                 </div>
                 <input type="hidden" name="_csrf" value="${_csrf.token}"/>
                 <div class="form-group">
-                    <button class="btn btn-primary" type="submit">Add</button>
+                    <button class="btn btn-primary" type="submit" style="background-color: #7c7698;border: 0;">Add</button>
                 </div>
             </form>
         </div>

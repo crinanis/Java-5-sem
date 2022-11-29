@@ -17,6 +17,8 @@ public class ContactsUsers implements UserDetails {
     private String cuserPassword;
     private String cuserName;
     private boolean active;
+    private String email;
+    private String activationCode;
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "contacts_roles", joinColumns = @JoinColumn(name = "userID"))
     @Enumerated(EnumType.STRING)
@@ -113,5 +115,17 @@ public class ContactsUsers implements UserDetails {
     @Override
     public boolean isEnabled() {
         return isActive();
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getActivationCode() {
+        return activationCode;
+    }
+    public void setActivationCode(String activationCode) {
+        this.activationCode = activationCode;
     }
 }

@@ -5,4 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepo extends JpaRepository<ContactsUsers, Long> {
     ContactsUsers findByCuserLogin(String username);
+    ContactsUsers findByActivationCode(String code);
 }

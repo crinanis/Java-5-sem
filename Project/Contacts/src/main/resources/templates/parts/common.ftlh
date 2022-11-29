@@ -12,7 +12,7 @@
               integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
               crossorigin="anonymous">
     </head>
-    <body>
+    <body style="background-color: #f4f4f8">
     <#include "navbar.ftlh">
     <div class="container mt-5">
         <#nested>
