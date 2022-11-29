@@ -13,6 +13,8 @@ public class ContactsList {
     @JoinColumn(name = "userID")
     private ContactsUsers contactOwner;
 
+    private String filename;
+
     public ContactsList(){
 
     }
@@ -25,36 +27,34 @@ public class ContactsList {
     public String getOwnerName() {
         return contactOwner != null ? contactOwner.getCuserLogin() : "<none>";
     }
-
     public void setContactOwner(ContactsUsers userLogin){
         this.contactOwner = userLogin;
     }
-
     public ContactsUsers getContactOwner() {
         return contactOwner;
     }
-
     public void setContactID(Integer contactID) {
         this.contactID = contactID;
     }
-
     public Integer getContactID() {
         return contactID;
     }
-
     public void setContactName(String contactName) {
         this.contactName = contactName;
     }
-
     public String getContactName() {
         return contactName;
     }
-
     public void setContactNumber(String contactNumber) {
         this.contactNumber = contactNumber;
     }
-
     public String getContactNumber() {
         return contactNumber;
+    }
+    public void setFilename(String filename) {
+        this.filename = filename;
+    }
+    public String getFilename() {
+        return filename;
     }
 }
