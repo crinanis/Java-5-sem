@@ -1,38 +1,57 @@
 <#import "parts/common.ftlh" as c>
-<#import "parts/login.ftlh" as l>
 
 <@c.page>
-    <div>
-        <@l.logout />
-        <span><a href="/user">User list</a></span>
-    </div>
-    <div>
-        <form method="post" enctype="multipart/form-data">
-            <input type="text" name="name" placeholder="Name"/>
-            <input type="text" name="number" placeholder="Input number"/>
-            <input type="file" name="file">
-            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-            <button type="submit">Add</button>
+    <div class="form-row">
+        <form method="get" action="/main" class="form-inline">
+            <input class="form-control" type="text" name="filter" value="${filter?if_exists}"
+                   placeholder="Search by tag"/>
+            <button class="btn btn-primary ml-2" type="submit">Search</button>
         </form>
     </div>
-    <div>List of contacts</div>
-    <form method="get" action="/main">
-        <input type="text" name="filter" value="${filter?if_exists}"/>
-        <button type="submit">Find</button>
-    </form>
-    <#list contacts as contact>
-        <div>
-            <b>${contact.contactID}</b>
-            <i>${contact.contactName}</i>
-            <span>${contact.contactNumber}</span>
-            <strong>${contact.ownerName}</strong>
-            <div>
-                <#if contact.filename??>
-                    <img width="50" height="50" src="/img/${contact.filename}">
-                </#if>
-            </div>
+
+    <a class="btn btn-primary mt-2 mb-2" data-toggle="collapse" href="#collapseExample" role="button"
+       aria-expanded="false">
+        Add new contact
+    </a>
+    <div class="collapse" id="collapseExample">
+        <div class="form-group mt-3">
+            <form method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="name" placeholder="Name"/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="number" placeholder="Number"/>
+                </div>
+                <div class="form-group">
+                    <div class="custom-file">
+                        <input type="file" name="file" id="customFile">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                </div>
+                <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Add</button>
+                </div>
+            </form>
         </div>
+    </div>
+
+    <div class="card-columns">
+        <#list contacts as contact>
+            <div class="card my-3">
+                <#if contact.filename??>
+                    <img class="card-img-top" width="50" height="50" src="/img/${contact.filename}">
+                </#if>
+                <div class="m-2">
+                    <i>${contact.contactName}</i>
+                    <span>${contact.contactNumber}</span>
+                </div>
+                <div class="card-footer text-muted">
+                    ${contact.ownerName}
+                </div>
+            </div>
         <#else>
-        No contacts
-    </#list>
+            No contacts
+        </#list>
+    </div>
 </@c.page>

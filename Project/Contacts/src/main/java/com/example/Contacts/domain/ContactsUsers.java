@@ -22,6 +22,10 @@ public class ContactsUsers implements UserDetails {
     @Enumerated(EnumType.STRING)
     private Set<Role> roles;
 
+    public boolean isAdmin(){
+        return roles.contains(Role.ADMIN);
+    }
+
     public ContactsUsers(){
 
     }
