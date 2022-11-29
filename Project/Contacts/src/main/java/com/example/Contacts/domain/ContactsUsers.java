@@ -12,7 +12,7 @@ import java.util.Set;
 public class ContactsUsers implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer userID;
+    private Long userID;
     private String cuserLogin;
     private String cuserPassword;
     private String cuserName;
@@ -31,7 +31,7 @@ public class ContactsUsers implements UserDetails {
         this.cuserPassword = cuserPassword;
     }
 
-    public void setUserID(Integer userID) {
+    public void setUserID(Long userID) {
         this.userID = userID;
     }
 
@@ -55,7 +55,7 @@ public class ContactsUsers implements UserDetails {
         this.roles = roles;
     }
 
-    public Integer getUserID() {
+    public Long getUserID() {
         return userID;
     }
 
