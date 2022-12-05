@@ -1,13 +1,19 @@
 package com.example.Contacts.domain;
 
+import org.hibernate.validator.constraints.Length;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 public class ContactsList {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer contactID;
+    private Long contactID;
+    @Length(max = 55, message = "Name is too long")
     private String contactName;
+    @NotBlank(message = "Please fill contact number")
+    @Length(max = 13, message = "Number is too long")
     private String contactNumber;
     @ManyToOne(fetch = FetchType.EAGER) //одному пользователю соответствует много контактов
     @JoinColumn(name = "userID")
@@ -33,10 +39,10 @@ public class ContactsList {
     public ContactsUsers getContactOwner() {
         return contactOwner;
     }
-    public void setContactID(Integer contactID) {
+    public void setContactID(Long contactID) {
         this.contactID = contactID;
     }
-    public Integer getContactID() {
+    public Long getContactID() {
         return contactID;
     }
     public void setContactName(String contactName) {

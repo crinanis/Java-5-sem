@@ -3,44 +3,61 @@ package com.example.Contacts.controller;
 import com.example.Contacts.domain.ContactsUsers;
 import com.example.Contacts.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.web.JsonPath;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.Map;
 
 @Controller
+@RequestMapping
 public class RegistrationController {
     @Autowired
     private UserService userService;
 
     @GetMapping("/registration")
-    public String registration(){
+    public String registration() {
         return "registration";
     }
 
     @PostMapping("/registration")
     public String addUser(
-            ContactsUsers user,
-            @RequestParam String username,
-            @RequestParam String password, Map<String, Object> model){
-        if(!userService.addUser(user, username, password)){
-            model.put("message", "User exists!");
+            @Valid ContactsUsers contactsUsers,
+            BindingResult bindingResult,
+            Model model
+    ) {
+        if (contactsUsers.getCuserPassword() != null
+                && !contactsUsers.getCuserPassword().equals(contactsUsers.getCuserPassword2())) {
+            model.addAttribute("passwordError", "Passwords dont match");
+        }
+
+        if (bindingResult.hasErrors()) {
+            Map<String, String> errors = ControllerUtils.getErrors(bindingResult);
+
+            model.mergeAttributes(errors);
+            model.addAttribute("contactsUsers", contactsUsers);
+
+            return "registration";
+        }
+
+
+        if (!userService.addUser(contactsUsers)) {
+            model.addAttribute("usernameError", "User exists!");
             return "registration";
         }
 
         return "redirect:/login";
     }
 
+
     @GetMapping("/activate/{code}")
-    public String activate(Model model, @PathVariable String code){
+    public String activate(Model model, @PathVariable String code) {
         boolean isActivated = userService.activateUser(code);
 
-        if(isActivated){
+        if (isActivated) {
             model.addAttribute("message", "User was successfully activated!");
         } else {
             model.addAttribute("message", "Activation code is not found");

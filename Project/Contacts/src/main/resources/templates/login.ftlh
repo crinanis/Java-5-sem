@@ -2,15 +2,14 @@
 <#import "parts/login.ftlh" as l>
 
 <@c.page>
-    <div class="text-success mb-3">
-        <#if message??>
-            <p>${message}</p>
-        <#else>
-        </#if>
-    </div>
     <div class="text-secondary mb-3">
         <h5>Login page</h5>
     </div>
+    <#if Session?? && Session.SPRING_SECURITY_LAST_EXCEPTION??>
+        <div class="alert alert-danger" role="alert">
+            ${Session.SPRING_SECURITY_LAST_EXCEPTION.message}
+        </div>
+    </#if>
     <@l.login "/login" false/>
 </@c.page>
 
