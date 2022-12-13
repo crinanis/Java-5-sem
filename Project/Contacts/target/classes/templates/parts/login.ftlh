@@ -1,57 +1,82 @@
+<#include "security.ftlh">
+
 <#macro login path isRegisterForm>
     <form action="${path}" method="post">
-        <div class="form-group row">
-            <label class="col-sm-2 col-form-label">User name:</label>
-            <div class="col-sm-6">
-                <input type="text"
-                       required name="cuserLogin"
-                       value="<#if contactsUsers??>${contactsUsers.cuserLogin}</#if>"
-                       class="form-control ${(textError??||usernameError??)?string('is-invalid', '')}"
-                       placeholder="Username"/>
-                <#if textError??>
-                    <div class="invalid-feedback">
-                        ${textError}
-                    </div>
-                </#if>
-                <#if usernameError??>
-                    <div class="invalid-feedback">
-                        ${usernameError}
-                    </div>
-                </#if>
-            </div>
-        </div>
-
-        <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Password:</label>
-            <div class="col-sm-6">
-                <input type="password"
-                       required name="cuserPassword"
-                       value="<#if contactsUsers??>${contactsUsers.cuserPassword}</#if>"
-                       class="form-control ${(textError??)?string('is-invalid', '')}"
-                       placeholder="Password"/>
-                <#if textError??>
-                    <div class="invalid-feedback">
-                        ${textError}
-                    </div>
-                </#if>
-            </div>
-        </div>
-
-        <#if isRegisterForm>
+        <#if !isRegisterForm>
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Repeat password</label>
+                <label class="col-sm-2 col-form-label">User name:</label>
                 <div class="col-sm-6">
-                    <input type="password"
-                           required name="cuserPassword2"
-                           class="form-control ${(passwordError??)?string('is-invalid', '')}"
-                           placeholder="Repeat password"/>
-                    <#if passwordError??>
+                    <input type="text"
+                           required name="username"
+                           class="form-control ${(textError??||usernameError??)?string('is-invalid', '')}"
+                           placeholder="Username"/>
+                    <#if textError??>
                         <div class="invalid-feedback">
-                            ${passwordError}
+                            ${textError}
+                        </div>
+                    </#if>
+                    <#if usernameError??>
+                        <div class="invalid-feedback">
+                            ${usernameError}
                         </div>
                     </#if>
                 </div>
             </div>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Password:</label>
+                <div class="col-sm-6">
+                    <input type="password"
+                           required name="password"
+                           class="form-control ${(textError??)?string('is-invalid', '')}"
+                           placeholder="Password"/>
+                    <#if textError??>
+                        <div class="invalid-feedback">
+                            ${textError}
+                        </div>
+                    </#if>
+                </div>
+            </div>
+        </#if>
+
+        <#if isRegisterForm>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">User name:</label>
+                <div class="col-sm-6">
+                    <input type="text"
+                           required name="cuserLogin"
+                           value="<#if contactsUsers??>${contactsUsers.cuserLogin}</#if>"
+                           class="form-control ${(textError??||usernameError??)?string('is-invalid', '')}"
+                           placeholder="Username"/>
+                    <#if textError??>
+                        <div class="invalid-feedback">
+                            ${textError}
+                        </div>
+                    </#if>
+                    <#if usernameError??>
+                        <div class="invalid-feedback">
+                            ${usernameError}
+                        </div>
+                    </#if>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Password:</label>
+                <div class="col-sm-6">
+                    <input type="password"
+                           required name="cuserPassword"
+                           value="<#if contactsUsers??>${contactsUsers.cuserPassword}</#if>"
+                           class="form-control ${(textError??)?string('is-invalid', '')}"
+                           placeholder="Password"/>
+                    <#if textError??>
+                        <div class="invalid-feedback">
+                            ${textError}
+                        </div>
+                    </#if>
+                </div>
+            </div>
+
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Email:</label>
                 <div class="col-sm-6">
@@ -81,6 +106,10 @@
 <#macro logout>
     <form action="/logout" method="post">
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-        <button style="background-color: #7c7698;border: 0;" class="btn btn-primary" type="submit">Sign out</button>
+        <button style="background-color: #7c7698;border: 0;" class="btn btn-primary" type="submit">
+         <#if user??> Sign out
+         <#else> Sign in
+         </#if>
+        </button>
     </form>
 </#macro>

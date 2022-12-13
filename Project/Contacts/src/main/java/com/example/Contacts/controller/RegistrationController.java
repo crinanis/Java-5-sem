@@ -3,7 +3,6 @@ package com.example.Contacts.controller;
 import com.example.Contacts.domain.ContactsUsers;
 import com.example.Contacts.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -29,10 +28,6 @@ public class RegistrationController {
             BindingResult bindingResult,
             Model model
     ) {
-        if (contactsUsers.getCuserPassword() != null
-                && !contactsUsers.getCuserPassword().equals(contactsUsers.getCuserPassword2())) {
-            model.addAttribute("passwordError", "Passwords dont match");
-        }
 
         if (bindingResult.hasErrors()) {
             Map<String, String> errors = ControllerUtils.getErrors(bindingResult);
@@ -43,23 +38,22 @@ public class RegistrationController {
             return "registration";
         }
 
-
         if (!userService.addUser(contactsUsers)) {
             model.addAttribute("usernameError", "User exists!");
             return "registration";
         }
-
         return "redirect:/login";
     }
-
 
     @GetMapping("/activate/{code}")
     public String activate(Model model, @PathVariable String code) {
         boolean isActivated = userService.activateUser(code);
 
         if (isActivated) {
+            model.addAttribute("messageType", "success");
             model.addAttribute("message", "User was successfully activated!");
         } else {
+            model.addAttribute("messageType", "danger");
             model.addAttribute("message", "Activation code is not found");
         }
 
