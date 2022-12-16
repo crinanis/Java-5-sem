@@ -1,0 +1,745 @@
+"2022-12-14 03:30:11 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Starting ContactsApplication using Java 17.0.5 on IT8N with PID 2108 (C:\Users\Administrator\Desktop\Contacts\target\classes started by Administrator in C:\Users\Administrator\Desktop\Contacts)
+""2022-12-14 03:30:11 [restartedMain] INFO  c.e.Contacts.ContactsApplication - No active profile set, falling back to 1 default profile: "default"
+""2022-12-14 03:30:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2022-12-14 03:30:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2022-12-14 03:30:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-12-14 03:30:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
+""2022-12-14 03:30:15 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+""2022-12-14 03:30:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2022-12-14 03:30:15 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+""2022-12-14 03:30:15 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2022-12-14 03:30:15 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3871 ms
+""2022-12-14 03:30:15 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+""2022-12-14 03:30:15 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+""2022-12-14 03:30:15 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+""2022-12-14 03:30:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2022-12-14 03:30:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2022-12-14 03:30:16 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:postgresql://localhost/contacts (PostgreSQL 14.6)
+""2022-12-14 03:30:16 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.061s)
+""2022-12-14 03:30:16 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
+""2022-12-14 03:30:16 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+""2022-12-14 03:30:16 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-12-14 03:30:17 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.11.Final
+""2022-12-14 03:30:17 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-12-14 03:30:17 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+""2022-12-14 03:30:19 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-12-14 03:30:19 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 03:30:19 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-12-14 03:30:20 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4ae218a5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@116514ed, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ac6d421, org.springframework.security.web.header.HeaderWriterFilter@1f5c80ce, org.springframework.security.web.csrf.CsrfFilter@7b7fa069, org.springframework.security.web.authentication.logout.LogoutFilter@24e7be1a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@96dd36, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d6cfb43, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58465cf1, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@2e8ae782, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@348985c7, org.springframework.security.web.session.SessionManagementFilter@6d4fa274, org.springframework.security.web.access.ExceptionTranslationFilter@1b476009, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e27c3f5]
+""2022-12-14 03:30:21 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""2022-12-14 03:30:21 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+""2022-12-14 03:30:21 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+""2022-12-14 03:30:21 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Started ContactsApplication in 11.199 seconds (JVM running for 12.567)
+""2022-12-14 03:34:20 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 03:34:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2022-12-14 03:34:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2022-12-14 03:34:29 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Starting ContactsApplication using Java 17.0.5 on IT8N with PID 148 (C:\Users\Administrator\Desktop\Contacts\target\classes started by Administrator in C:\Users\Administrator\Desktop\Contacts)
+""2022-12-14 03:34:29 [restartedMain] INFO  c.e.Contacts.ContactsApplication - No active profile set, falling back to 1 default profile: "default"
+""2022-12-14 03:34:29 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2022-12-14 03:34:29 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2022-12-14 03:34:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-12-14 03:34:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
+""2022-12-14 03:34:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+""2022-12-14 03:34:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2022-12-14 03:34:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+""2022-12-14 03:34:32 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2022-12-14 03:34:32 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2994 ms
+""2022-12-14 03:34:32 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+""2022-12-14 03:34:32 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+""2022-12-14 03:34:32 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+""2022-12-14 03:34:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2022-12-14 03:34:33 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2022-12-14 03:34:33 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:postgresql://localhost/contacts (PostgreSQL 14.6)
+""2022-12-14 03:34:33 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.078s)
+""2022-12-14 03:34:33 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
+""2022-12-14 03:34:33 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+""2022-12-14 03:34:33 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-12-14 03:34:34 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.11.Final
+""2022-12-14 03:34:34 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-12-14 03:34:35 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+""2022-12-14 03:34:36 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-12-14 03:34:36 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 03:34:36 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-12-14 03:34:37 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69721db, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b4aa15f, org.springframework.security.web.context.SecurityContextPersistenceFilter@2020427e, org.springframework.security.web.header.HeaderWriterFilter@4df278c6, org.springframework.security.web.csrf.CsrfFilter@6778d925, org.springframework.security.web.authentication.logout.LogoutFilter@78a2ee7b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5257935, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2875a54b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56dd8254, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@39c69113, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@399f4b92, org.springframework.security.web.session.SessionManagementFilter@25bd7a57, org.springframework.security.web.access.ExceptionTranslationFilter@46ebc084, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@723a33fe]
+""2022-12-14 03:34:38 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""2022-12-14 03:34:38 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+""2022-12-14 03:34:38 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+""2022-12-14 03:34:38 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Started ContactsApplication in 10.053 seconds (JVM running for 11.556)
+""2022-12-14 03:34:45 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-12-14 03:34:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2022-12-14 03:34:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+""2022-12-14 03:34:50 [http-nio-8080-exec-5] INFO  c.example.Contacts.aop.LogUserAspect - before execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 03:34:50 [http-nio-8080-exec-5] INFO  c.example.Contacts.aop.LogUserAspect - after execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 03:37:38 [http-nio-8080-exec-10] INFO  c.example.Contacts.aop.LogUserAspect - before execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 03:37:38 [http-nio-8080-exec-10] INFO  c.example.Contacts.aop.LogUserAspect - after execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 04:03:42 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 04:03:42 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2022-12-14 04:03:42 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2022-12-14 04:03:58 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Starting ContactsApplication using Java 17.0.5 on IT8N with PID 18292 (C:\Users\Administrator\Desktop\Contacts\target\classes started by Administrator in C:\Users\Administrator\Desktop\Contacts)
+""2022-12-14 04:03:58 [restartedMain] INFO  c.e.Contacts.ContactsApplication - No active profile set, falling back to 1 default profile: "default"
+""2022-12-14 04:03:58 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2022-12-14 04:03:58 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2022-12-14 04:04:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-12-14 04:04:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 2 JPA repository interfaces.
+""2022-12-14 04:04:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+""2022-12-14 04:04:01 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2022-12-14 04:04:01 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+""2022-12-14 04:04:02 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2022-12-14 04:04:02 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3721 ms
+""2022-12-14 04:04:02 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+""2022-12-14 04:04:02 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+""2022-12-14 04:04:02 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+""2022-12-14 04:04:02 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2022-12-14 04:04:02 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2022-12-14 04:04:02 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:postgresql://localhost/contacts (PostgreSQL 14.6)
+""2022-12-14 04:04:03 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.073s)
+""2022-12-14 04:04:03 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
+""2022-12-14 04:04:03 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+""2022-12-14 04:04:03 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-12-14 04:04:03 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.11.Final
+""2022-12-14 04:04:03 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-12-14 04:04:03 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+""2022-12-14 04:04:05 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-12-14 04:04:05 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 04:04:05 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-12-14 04:04:06 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5cdf6d53, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@434134b3, org.springframework.security.web.context.SecurityContextPersistenceFilter@a16dfb3, org.springframework.security.web.header.HeaderWriterFilter@56b6ce63, org.springframework.security.web.csrf.CsrfFilter@78b3cd2d, org.springframework.security.web.authentication.logout.LogoutFilter@568efdca, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@40bfdd2e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a9f22fa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21422a3, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@25428e2b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25e945a4, org.springframework.security.web.session.SessionManagementFilter@4912c15f, org.springframework.security.web.access.ExceptionTranslationFilter@7fd4e9bc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16c91922]
+""2022-12-14 04:04:08 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""2022-12-14 04:04:08 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+""2022-12-14 04:04:08 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+""2022-12-14 04:04:08 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Started ContactsApplication in 11.258 seconds (JVM running for 12.578)
+""2022-12-14 04:04:13 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-12-14 04:04:13 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2022-12-14 04:04:13 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+""2022-12-14 04:04:20 [http-nio-8080-exec-6] INFO  c.example.Contacts.aop.LogUserAspect - before execution(List com.example.Contacts.service.UserService.findAll())
+""2022-12-14 04:04:20 [http-nio-8080-exec-6] INFO  c.example.Contacts.aop.LogUserAspect - after execution(List com.example.Contacts.service.UserService.findAll())
+""2022-12-14 04:04:22 [http-nio-8080-exec-8] INFO  c.example.Contacts.aop.LogUserAspect - before execution(List com.example.Contacts.service.UserService.findAll())
+""2022-12-14 04:04:22 [http-nio-8080-exec-8] INFO  c.example.Contacts.aop.LogUserAspect - after execution(List com.example.Contacts.service.UserService.findAll())
+""2022-12-14 04:12:35 [http-nio-8080-exec-4] INFO  c.example.Contacts.aop.LogUserAspect - before execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 04:12:35 [http-nio-8080-exec-4] INFO  c.example.Contacts.aop.LogUserAspect - after execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 04:12:44 [http-nio-8080-exec-8] INFO  c.example.Contacts.aop.LogUserAspect - before execution(boolean com.example.Contacts.service.UserService.addUser(ContactsUsers))
+""2022-12-14 04:12:45 [http-nio-8080-exec-8] INFO  c.e.Contacts.aop.MailSenderAspect - before execution(void com.example.Contacts.service.MailSender.send(String,String,String))
+""2022-12-14 04:12:46 [http-nio-8080-exec-8] INFO  c.e.Contacts.aop.MailSenderAspect - after execution(void com.example.Contacts.service.MailSender.send(String,String,String))
+""2022-12-14 04:12:46 [http-nio-8080-exec-8] INFO  c.example.Contacts.aop.LogUserAspect - after execution(boolean com.example.Contacts.service.UserService.addUser(ContactsUsers))
+""2022-12-14 04:30:09 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 04:30:09 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2022-12-14 04:30:09 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2022-12-14 04:30:25 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Starting ContactsApplication using Java 17.0.5 on IT8N with PID 18412 (C:\Users\Administrator\Desktop\Contacts\target\classes started by Administrator in C:\Users\Administrator\Desktop\Contacts)
+""2022-12-14 04:30:25 [restartedMain] INFO  c.e.Contacts.ContactsApplication - No active profile set, falling back to 1 default profile: "default"
+""2022-12-14 04:30:25 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2022-12-14 04:30:25 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2022-12-14 04:30:27 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-12-14 04:30:27 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 2 JPA repository interfaces.
+""2022-12-14 04:30:29 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+""2022-12-14 04:30:29 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2022-12-14 04:30:29 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+""2022-12-14 04:30:29 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2022-12-14 04:30:29 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3868 ms
+""2022-12-14 04:30:30 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+""2022-12-14 04:30:30 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+""2022-12-14 04:30:30 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+""2022-12-14 04:30:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2022-12-14 04:30:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2022-12-14 04:30:30 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:postgresql://localhost/contacts (PostgreSQL 14.6)
+""2022-12-14 04:30:30 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.058s)
+""2022-12-14 04:30:30 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
+""2022-12-14 04:30:30 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+""2022-12-14 04:30:30 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-12-14 04:30:31 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.11.Final
+""2022-12-14 04:30:31 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-12-14 04:30:31 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+""2022-12-14 04:30:33 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-12-14 04:30:33 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 04:30:33 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-12-14 04:30:34 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@75eed01a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7225f320, org.springframework.security.web.context.SecurityContextPersistenceFilter@434134b3, org.springframework.security.web.header.HeaderWriterFilter@25428e2b, org.springframework.security.web.csrf.CsrfFilter@11fcd8da, org.springframework.security.web.authentication.logout.LogoutFilter@1381e659, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1735801d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@241d19a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@130c6bc5, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7a8d2909, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cdf1e08, org.springframework.security.web.session.SessionManagementFilter@45f47748, org.springframework.security.web.access.ExceptionTranslationFilter@40bfdd2e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@315ade60]
+""2022-12-14 04:30:36 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""2022-12-14 04:30:36 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+""2022-12-14 04:30:36 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+""2022-12-14 04:30:36 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Started ContactsApplication in 11.5 seconds (JVM running for 12.843)
+""2022-12-14 04:30:59 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-12-14 04:30:59 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2022-12-14 04:30:59 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2022-12-14 04:31:03 [http-nio-8080-exec-2] INFO  c.example.Contacts.aop.LogUserAspect - before execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 04:31:03 [http-nio-8080-exec-2] INFO  c.example.Contacts.aop.LogUserAspect - after execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 04:31:41 [http-nio-8080-exec-7] INFO  c.example.Contacts.aop.LogUserAspect - before execution(List com.example.Contacts.service.UserService.findAll())
+""2022-12-14 04:31:41 [http-nio-8080-exec-7] INFO  c.example.Contacts.aop.LogUserAspect - after execution(List com.example.Contacts.service.UserService.findAll())
+""2022-12-14 04:32:16 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 04:32:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2022-12-14 04:32:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2022-12-14 08:02:34 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Starting ContactsApplication using Java 17.0.5 on IT8N with PID 6868 (C:\Users\Administrator\Desktop\Contacts\target\classes started by Administrator in C:\Users\Administrator\Desktop\Contacts)
+""2022-12-14 08:02:34 [restartedMain] INFO  c.e.Contacts.ContactsApplication - No active profile set, falling back to 1 default profile: "default"
+""2022-12-14 08:02:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2022-12-14 08:02:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2022-12-14 08:02:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-12-14 08:02:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 2 JPA repository interfaces.
+""2022-12-14 08:02:38 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+""2022-12-14 08:02:38 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2022-12-14 08:02:38 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+""2022-12-14 08:02:38 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2022-12-14 08:02:38 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3946 ms
+""2022-12-14 08:02:38 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+""2022-12-14 08:02:38 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+""2022-12-14 08:02:38 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+""2022-12-14 08:02:38 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2022-12-14 08:02:39 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2022-12-14 08:02:39 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:postgresql://localhost/contacts (PostgreSQL 14.6)
+""2022-12-14 08:02:39 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.082s)
+""2022-12-14 08:02:39 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
+""2022-12-14 08:02:39 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+""2022-12-14 08:02:39 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-12-14 08:02:39 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.11.Final
+""2022-12-14 08:02:39 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-12-14 08:02:40 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+""2022-12-14 08:02:41 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-12-14 08:02:41 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 08:02:41 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-12-14 08:02:42 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@418350db, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55e30594, org.springframework.security.web.context.SecurityContextPersistenceFilter@4905d74c, org.springframework.security.web.header.HeaderWriterFilter@1d5b5c24, org.springframework.security.web.csrf.CsrfFilter@773e56b6, org.springframework.security.web.authentication.logout.LogoutFilter@3f032947, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@597474cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f36e2be, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2aea7768, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@65254e43, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ca5afc1, org.springframework.security.web.session.SessionManagementFilter@5967e1e4, org.springframework.security.web.access.ExceptionTranslationFilter@775532e0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@714c554]
+""2022-12-14 08:02:44 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""2022-12-14 08:02:44 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+""2022-12-14 08:02:44 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+""2022-12-14 08:02:44 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Started ContactsApplication in 11.498 seconds (JVM running for 13.365)
+""2022-12-14 08:02:52 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-12-14 08:02:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2022-12-14 08:02:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+""2022-12-14 08:03:14 [http-nio-8080-exec-1] INFO  c.example.Contacts.aop.LogUserAspect - before execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 08:03:14 [http-nio-8080-exec-1] INFO  c.example.Contacts.aop.LogUserAspect - after execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 08:03:15 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 560 ms
+""2022-12-14 08:05:33 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+""2022-12-14 08:05:33 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+""2022-12-14 08:05:33 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+""2022-12-14 08:05:33 [Thread-5] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+""2022-12-14 08:05:33 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 08:05:33 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2022-12-14 08:05:33 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2022-12-14 08:05:33 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Starting ContactsApplication using Java 17.0.5 on IT8N with PID 6868 (C:\Users\Administrator\Desktop\Contacts\target\classes started by Administrator in C:\Users\Administrator\Desktop\Contacts)
+""2022-12-14 08:05:33 [restartedMain] INFO  c.e.Contacts.ContactsApplication - No active profile set, falling back to 1 default profile: "default"
+""2022-12-14 08:05:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-12-14 08:05:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+""2022-12-14 08:05:34 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.example.Contacts.controller.MainController [Xlint:invalidAbsoluteTypeName]
+""2022-12-14 08:05:34 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+""2022-12-14 08:05:34 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+"org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.example.Contacts.controller.MainController [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:762) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.example.Contacts.ContactsApplication.main(ContactsApplication.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.4.jar:2.7.4]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.example.Contacts.controller.MainController [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.example.Contacts.controller.MainController [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 38 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.example.Contacts.controller.MainController [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 52 common frames omitted
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.example.Contacts.controller.MainController [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319) ~[aspectjweaver-1.9.7.jar:na]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:128) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:97) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:78) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:341) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 74 common frames omitted
+"2022-12-14 08:05:39 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Starting ContactsApplication using Java 17.0.5 on IT8N with PID 6868 (C:\Users\Administrator\Desktop\Contacts\target\classes started by Administrator in C:\Users\Administrator\Desktop\Contacts)
+""2022-12-14 08:05:39 [restartedMain] INFO  c.e.Contacts.ContactsApplication - No active profile set, falling back to 1 default profile: "default"
+""2022-12-14 08:05:39 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-12-14 08:05:39 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+""2022-12-14 08:05:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+""2022-12-14 08:05:40 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2022-12-14 08:05:40 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+""2022-12-14 08:05:40 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2022-12-14 08:05:40 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 823 ms
+""2022-12-14 08:05:40 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+""2022-12-14 08:05:40 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+""2022-12-14 08:05:40 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+""2022-12-14 08:05:40 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+""2022-12-14 08:05:40 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+""2022-12-14 08:05:40 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:postgresql://localhost/contacts (PostgreSQL 14.6)
+""2022-12-14 08:05:40 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.016s)
+""2022-12-14 08:05:40 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
+""2022-12-14 08:05:40 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+""2022-12-14 08:05:40 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-12-14 08:05:40 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+""2022-12-14 08:05:40 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-12-14 08:05:40 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 08:05:41 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-12-14 08:05:41 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1fda2ede, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ae46d1c, org.springframework.security.web.context.SecurityContextPersistenceFilter@55e7fefe, org.springframework.security.web.header.HeaderWriterFilter@3280fa84, org.springframework.security.web.csrf.CsrfFilter@397fbe60, org.springframework.security.web.authentication.logout.LogoutFilter@124d05c9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6bb7bdf8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35d775d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71fc8bd4, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5f2463e5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5cea59c5, org.springframework.security.web.session.SessionManagementFilter@11afde15, org.springframework.security.web.access.ExceptionTranslationFilter@12de41c2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e757bd2]
+""2022-12-14 08:05:42 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""2022-12-14 08:05:42 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+""2022-12-14 08:05:42 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+""2022-12-14 08:05:42 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Started ContactsApplication in 3.003 seconds (JVM running for 190.922)
+""2022-12-14 08:05:42 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+""2022-12-14 08:05:45 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-12-14 08:05:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2022-12-14 08:05:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+""2022-12-14 08:05:45 [http-nio-8080-exec-7] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 157 ms
+""2022-12-14 08:06:02 [http-nio-8080-exec-10] INFO  c.example.Contacts.aop.LogUserAspect - before execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 08:06:02 [http-nio-8080-exec-10] INFO  c.example.Contacts.aop.LogUserAspect - after execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 08:06:30 [http-nio-8080-exec-7] INFO  c.example.Contacts.aop.LogUserAspect - before execution(List com.example.Contacts.service.UserService.findAll())
+""2022-12-14 08:06:30 [http-nio-8080-exec-7] INFO  c.example.Contacts.aop.LogUserAspect - after execution(List com.example.Contacts.service.UserService.findAll())
+""2022-12-14 08:32:02 [http-nio-8080-exec-9] INFO  c.example.Contacts.aop.LogUserAspect - before execution(boolean com.example.Contacts.service.UserService.addUser(ContactsUsers))
+""2022-12-14 08:32:02 [http-nio-8080-exec-9] INFO  c.e.Contacts.aop.MailSenderAspect - before execution(void com.example.Contacts.service.MailSender.send(String,String,String))
+""2022-12-14 08:32:08 [http-nio-8080-exec-9] INFO  c.e.Contacts.aop.MailSenderAspect - after execution(void com.example.Contacts.service.MailSender.send(String,String,String))
+""2022-12-14 08:32:08 [http-nio-8080-exec-9] INFO  c.example.Contacts.aop.LogUserAspect - after execution(boolean com.example.Contacts.service.UserService.addUser(ContactsUsers))
+""2022-12-14 08:32:30 [http-nio-8080-exec-1] INFO  c.example.Contacts.aop.LogUserAspect - before execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 08:32:30 [http-nio-8080-exec-1] INFO  c.example.Contacts.aop.LogUserAspect - after execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 08:34:54 [http-nio-8080-exec-6] INFO  c.example.Contacts.aop.LogUserAspect - before execution(boolean com.example.Contacts.service.UserService.addUser(ContactsUsers))
+""2022-12-14 08:34:54 [http-nio-8080-exec-6] INFO  c.e.Contacts.aop.MailSenderAspect - before execution(void com.example.Contacts.service.MailSender.send(String,String,String))
+""2022-12-14 08:34:59 [http-nio-8080-exec-6] INFO  c.e.Contacts.aop.MailSenderAspect - after execution(void com.example.Contacts.service.MailSender.send(String,String,String))
+""2022-12-14 08:34:59 [http-nio-8080-exec-6] INFO  c.example.Contacts.aop.LogUserAspect - after execution(boolean com.example.Contacts.service.UserService.addUser(ContactsUsers))
+""2022-12-14 08:44:45 [http-nio-8080-exec-10] INFO  c.example.Contacts.aop.LogUserAspect - before execution(boolean com.example.Contacts.service.UserService.activateUser(String))
+""2022-12-14 08:44:45 [http-nio-8080-exec-10] INFO  c.example.Contacts.aop.LogUserAspect - after execution(boolean com.example.Contacts.service.UserService.activateUser(String))
+""2022-12-14 08:45:01 [http-nio-8080-exec-1] INFO  c.example.Contacts.aop.LogUserAspect - before execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 08:45:01 [http-nio-8080-exec-1] INFO  c.example.Contacts.aop.LogUserAspect - after execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 08:45:41 [http-nio-8080-exec-2] INFO  c.example.Contacts.aop.LogUserAspect - before execution(void com.example.Contacts.service.UserService.updateProfile(ContactsUsers,String,String))
+""2022-12-14 08:45:41 [http-nio-8080-exec-2] INFO  c.example.Contacts.aop.LogUserAspect - after execution(void com.example.Contacts.service.UserService.updateProfile(ContactsUsers,String,String))
+""2022-12-14 08:45:44 [http-nio-8080-exec-4] INFO  c.example.Contacts.aop.LogUserAspect - before execution(void com.example.Contacts.service.UserService.updateProfile(ContactsUsers,String,String))
+""2022-12-14 08:45:45 [http-nio-8080-exec-4] INFO  c.example.Contacts.aop.LogUserAspect - after execution(void com.example.Contacts.service.UserService.updateProfile(ContactsUsers,String,String))
+""2022-12-14 08:55:50 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 22 class path changes (0 additions, 21 deletions, 1 modification)
+""2022-12-14 08:55:50 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+""2022-12-14 08:55:50 [Thread-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+""2022-12-14 08:55:50 [Thread-7] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+""2022-12-14 08:55:50 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 08:55:50 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+""2022-12-14 08:55:50 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+""2022-12-14 08:55:50 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Starting ContactsApplication using Java 17.0.5 on IT8N with PID 6868 (C:\Users\Administrator\Desktop\Contacts\target\classes started by Administrator in C:\Users\Administrator\Desktop\Contacts)
+""2022-12-14 08:55:50 [restartedMain] INFO  c.e.Contacts.ContactsApplication - No active profile set, falling back to 1 default profile: "default"
+""2022-12-14 08:55:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-12-14 08:55:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+""2022-12-14 08:55:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+""2022-12-14 08:55:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2022-12-14 08:55:51 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+""2022-12-14 08:55:51 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2022-12-14 08:55:51 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1011 ms
+""2022-12-14 08:55:51 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+""2022-12-14 08:55:51 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+""2022-12-14 08:55:51 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+""2022-12-14 08:55:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+""2022-12-14 08:55:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+""2022-12-14 08:55:51 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:postgresql://localhost/contacts (PostgreSQL 14.6)
+""2022-12-14 08:55:51 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.025s)
+""2022-12-14 08:55:51 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
+""2022-12-14 08:55:51 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+""2022-12-14 08:55:51 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-12-14 08:55:51 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+""2022-12-14 08:55:52 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-12-14 08:55:52 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 08:55:52 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-12-14 08:55:53 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 70eb37bf-7de2-4fa6-bd99-eca05cc7445d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+""2022-12-14 08:55:53 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@74a4819b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@675403a1, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c24820f, org.springframework.security.web.header.HeaderWriterFilter@78093c71, org.springframework.security.web.csrf.CsrfFilter@698ee607, org.springframework.security.web.authentication.logout.LogoutFilter@3a173119, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2afa37b1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@37eccd6b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7ea67c2e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@40e1287f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13027147, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22d93de2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37cd0155, org.springframework.security.web.session.SessionManagementFilter@3204f496, org.springframework.security.web.access.ExceptionTranslationFilter@1c2477a3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b43755a]
+""2022-12-14 08:55:53 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""2022-12-14 08:55:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+""2022-12-14 08:55:53 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+""2022-12-14 08:55:53 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Started ContactsApplication in 2.961 seconds (JVM running for 3202.047)
+""2022-12-14 08:55:53 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   MailSenderAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.mail.internet.MimeMessage', 'javax.activation.MimeType', 'org.springframework.mail.MailSender' (OnClassCondition)
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on MailSenderAutoConfiguration.MailSenderCondition.JndiNameProperty @ConditionalOnProperty (spring.mail.jndi-name) did not find property 'jndi-name'; NestedCondition on MailSenderAutoConfiguration.MailSenderCondition.HostProperty @ConditionalOnProperty (spring.mail.host) matched (MailSenderAutoConfiguration.MailSenderCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.mail.MailSender; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MailSenderPropertiesConfiguration#mailSender matched:
+      - @ConditionalOnMissingBean (types: org.springframework.mail.javamail.JavaMailSender; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.ObjectPostProcessor; SearchStrategy: all) found bean 'objectPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder,org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector,org.springframework.security.oauth2.client.registration.ClientRegistrationRepository,org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+""2022-12-14 08:55:58 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 22 class path changes (22 additions, 0 deletions, 0 modifications)
+""2022-12-14 08:55:58 [Thread-14] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+""2022-12-14 08:55:58 [Thread-14] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+""2022-12-14 08:55:58 [Thread-14] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 08:55:58 [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+""2022-12-14 08:55:58 [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+""2022-12-14 08:55:59 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Starting ContactsApplication using Java 17.0.5 on IT8N with PID 6868 (C:\Users\Administrator\Desktop\Contacts\target\classes started by Administrator in C:\Users\Administrator\Desktop\Contacts)
+""2022-12-14 08:55:59 [restartedMain] INFO  c.e.Contacts.ContactsApplication - No active profile set, falling back to 1 default profile: "default"
+""2022-12-14 08:55:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-12-14 08:55:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+""2022-12-14 08:56:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+""2022-12-14 08:56:00 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2022-12-14 08:56:00 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+""2022-12-14 08:56:00 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2022-12-14 08:56:00 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1207 ms
+""2022-12-14 08:56:00 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+""2022-12-14 08:56:00 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+""2022-12-14 08:56:00 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+""2022-12-14 08:56:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+""2022-12-14 08:56:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+""2022-12-14 08:56:00 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:postgresql://localhost/contacts (PostgreSQL 14.6)
+""2022-12-14 08:56:00 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.012s)
+""2022-12-14 08:56:00 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
+""2022-12-14 08:56:00 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+""2022-12-14 08:56:00 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-12-14 08:56:00 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+""2022-12-14 08:56:00 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-12-14 08:56:00 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 08:56:00 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-12-14 08:56:01 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3c2e5519, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66df51ae, org.springframework.security.web.context.SecurityContextPersistenceFilter@662931fc, org.springframework.security.web.header.HeaderWriterFilter@3ada6662, org.springframework.security.web.csrf.CsrfFilter@47eb3df8, org.springframework.security.web.authentication.logout.LogoutFilter@54319505, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4005f203, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74524c2b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d52cdb5, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@197e1a53, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@925329c, org.springframework.security.web.session.SessionManagementFilter@78b3c7ef, org.springframework.security.web.access.ExceptionTranslationFilter@5ca9d81a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25efe88a]
+""2022-12-14 08:56:02 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""2022-12-14 08:56:02 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+""2022-12-14 08:56:02 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+""2022-12-14 08:56:02 [restartedMain] INFO  c.e.Contacts.ContactsApplication - Started ContactsApplication in 3.427 seconds (JVM running for 3210.945)
+""2022-12-14 08:56:02 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   MailSenderAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.mail.MailSender; SearchStrategy: all) found beans of type 'org.springframework.mail.MailSender' getMailSender (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.mail.internet.MimeMessage', 'javax.activation.MimeType', 'org.springframework.mail.MailSender' (OnClassCondition)
+         - AnyNestedCondition 1 matched 1 did not; NestedCondition on MailSenderAutoConfiguration.MailSenderCondition.JndiNameProperty @ConditionalOnProperty (spring.mail.jndi-name) did not find property 'jndi-name'; NestedCondition on MailSenderAutoConfiguration.MailSenderCondition.HostProperty @ConditionalOnProperty (spring.mail.host) matched (MailSenderAutoConfiguration.MailSenderCondition)
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' webSecurityConfig; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder,org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector,org.springframework.security.oauth2.client.registration.ClientRegistrationRepository,org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository; SearchStrategy: all) found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' userService (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+""2022-12-14 08:56:06 [main] INFO  com.example.Contacts.ServiceTest - Starting ServiceTest using Java 17.0.5 on IT8N with PID 5420 (started by Administrator in C:\Users\Administrator\Desktop\Contacts)
+""2022-12-14 08:56:06 [main] INFO  com.example.Contacts.ServiceTest - No active profile set, falling back to 1 default profile: "default"
+""2022-12-14 08:56:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-12-14 08:56:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 126 ms. Found 2 JPA repository interfaces.
+""2022-12-14 08:56:10 [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+""2022-12-14 08:56:10 [main] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+""2022-12-14 08:56:10 [main] INFO  o.f.c.i.license.VersionPrinter - 
+""2022-12-14 08:56:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2022-12-14 08:56:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2022-12-14 08:56:10 [main] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:postgresql://localhost/contacts (PostgreSQL 14.6)
+""2022-12-14 08:56:10 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.053s)
+""2022-12-14 08:56:10 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
+""2022-12-14 08:56:10 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+""2022-12-14 08:56:11 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-12-14 08:56:11 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.11.Final
+""2022-12-14 08:56:11 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-12-14 08:56:12 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+""2022-12-14 08:56:13 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-12-14 08:56:13 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 08:56:14 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-12-14 08:56:16 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@cc91fe3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@481c1e92, org.springframework.security.web.context.SecurityContextPersistenceFilter@4bec6682, org.springframework.security.web.header.HeaderWriterFilter@7ba623d1, org.springframework.security.web.csrf.CsrfFilter@3d195d15, org.springframework.security.web.authentication.logout.LogoutFilter@5274acd1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d126f07, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23f539df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@513bec8c, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@41120e48, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66f223fa, org.springframework.security.web.session.SessionManagementFilter@576a8b00, org.springframework.security.web.access.ExceptionTranslationFilter@52a0bc48, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57777c23]
+""2022-12-14 08:56:20 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+""2022-12-14 08:56:20 [main] INFO  com.example.Contacts.ServiceTest - Started ServiceTest in 14.234 seconds (JVM running for 16.747)
+""2022-12-14 08:56:20 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 08:56:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2022-12-14 08:56:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2022-12-14 08:56:40 [main] INFO  com.example.Contacts.ServiceTest - Starting ServiceTest using Java 17.0.5 on IT8N with PID 14408 (started by Administrator in C:\Users\Administrator\Desktop\Contacts)
+""2022-12-14 08:56:40 [main] INFO  com.example.Contacts.ServiceTest - No active profile set, falling back to 1 default profile: "default"
+""2022-12-14 08:56:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-12-14 08:56:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108 ms. Found 2 JPA repository interfaces.
+""2022-12-14 08:56:43 [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+""2022-12-14 08:56:43 [main] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+""2022-12-14 08:56:43 [main] INFO  o.f.c.i.license.VersionPrinter - 
+""2022-12-14 08:56:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2022-12-14 08:56:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2022-12-14 08:56:44 [main] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:postgresql://localhost/contacts (PostgreSQL 14.6)
+""2022-12-14 08:56:44 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.053s)
+""2022-12-14 08:56:44 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
+""2022-12-14 08:56:44 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+""2022-12-14 08:56:44 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-12-14 08:56:45 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.11.Final
+""2022-12-14 08:56:45 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-12-14 08:56:45 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+""2022-12-14 08:56:47 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-12-14 08:56:47 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 08:56:47 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-12-14 08:56:49 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4280b20b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50e4d8cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@64de9fa4, org.springframework.security.web.header.HeaderWriterFilter@7dd2a5f7, org.springframework.security.web.csrf.CsrfFilter@5b2fc2c0, org.springframework.security.web.authentication.logout.LogoutFilter@7a689979, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@cc91fe3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fc84c92, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e643402, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@646ddc20, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b37d1a4, org.springframework.security.web.session.SessionManagementFilter@1d6014a7, org.springframework.security.web.access.ExceptionTranslationFilter@513bec8c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@165a5979]
+""2022-12-14 08:56:53 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+""2022-12-14 08:56:53 [main] INFO  com.example.Contacts.ServiceTest - Started ServiceTest in 13.525 seconds (JVM running for 15.441)
+""2022-12-14 08:56:53 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 08:56:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2022-12-14 08:56:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2022-12-14 08:57:33 [main] INFO  com.example.Contacts.ServiceTest - Starting ServiceTest using Java 17.0.5 on IT8N with PID 12912 (started by Administrator in C:\Users\Administrator\Desktop\Contacts)
+""2022-12-14 08:57:33 [main] INFO  com.example.Contacts.ServiceTest - No active profile set, falling back to 1 default profile: "default"
+""2022-12-14 08:57:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-12-14 08:57:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 193 ms. Found 2 JPA repository interfaces.
+""2022-12-14 08:57:37 [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+""2022-12-14 08:57:37 [main] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+""2022-12-14 08:57:37 [main] INFO  o.f.c.i.license.VersionPrinter - 
+""2022-12-14 08:57:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2022-12-14 08:57:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2022-12-14 08:57:37 [main] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:postgresql://localhost/contacts (PostgreSQL 14.6)
+""2022-12-14 08:57:37 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.056s)
+""2022-12-14 08:57:37 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
+""2022-12-14 08:57:38 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+""2022-12-14 08:57:38 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-12-14 08:57:38 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.11.Final
+""2022-12-14 08:57:39 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-12-14 08:57:39 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+""2022-12-14 08:57:40 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-12-14 08:57:40 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 08:57:41 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-12-14 08:57:42 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6a358906, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@893081e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d45c4b7, org.springframework.security.web.header.HeaderWriterFilter@7c3223aa, org.springframework.security.web.csrf.CsrfFilter@68fc1e7f, org.springframework.security.web.authentication.logout.LogoutFilter@612531a3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d5958d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7575f7e1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15a5cc6e, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@13e5b262, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a941fb4, org.springframework.security.web.session.SessionManagementFilter@693ed09d, org.springframework.security.web.access.ExceptionTranslationFilter@2d97344c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a95aaae]
+""2022-12-14 08:57:46 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+""2022-12-14 08:57:46 [main] INFO  com.example.Contacts.ServiceTest - Started ServiceTest in 13.804 seconds (JVM running for 15.881)
+""2022-12-14 08:57:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 08:57:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2022-12-14 08:57:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2022-12-14 08:59:43 [main] INFO  com.example.Contacts.ServiceTest - Starting ServiceTest using Java 17.0.5 on IT8N with PID 7060 (started by Administrator in C:\Users\Administrator\Desktop\Contacts)
+""2022-12-14 08:59:43 [main] INFO  com.example.Contacts.ServiceTest - No active profile set, falling back to 1 default profile: "default"
+""2022-12-14 08:59:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-12-14 08:59:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 118 ms. Found 2 JPA repository interfaces.
+""2022-12-14 08:59:46 [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+""2022-12-14 08:59:46 [main] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+""2022-12-14 08:59:46 [main] INFO  o.f.c.i.license.VersionPrinter - 
+""2022-12-14 08:59:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2022-12-14 08:59:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2022-12-14 08:59:47 [main] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:postgresql://localhost/contacts (PostgreSQL 14.6)
+""2022-12-14 08:59:47 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.069s)
+""2022-12-14 08:59:47 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
+""2022-12-14 08:59:47 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+""2022-12-14 08:59:47 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-12-14 08:59:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.11.Final
+""2022-12-14 08:59:48 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-12-14 08:59:48 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+""2022-12-14 08:59:50 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-12-14 08:59:50 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2022-12-14 08:59:50 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+""2022-12-14 08:59:51 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-12-14 08:59:51 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 08:59:51 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-12-14 08:59:53 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5d782a4a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cc91fe3, org.springframework.security.web.context.SecurityContextPersistenceFilter@1239c268, org.springframework.security.web.header.HeaderWriterFilter@7369208e, org.springframework.security.web.csrf.CsrfFilter@1693d505, org.springframework.security.web.authentication.logout.LogoutFilter@6406b84d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3a5ffea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f839ec5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7683d632, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@200e6029, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@481c1e92, org.springframework.security.web.session.SessionManagementFilter@6dbdbb69, org.springframework.security.web.access.ExceptionTranslationFilter@57fae911, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f602930]
+""2022-12-14 08:59:58 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+""2022-12-14 08:59:58 [main] INFO  com.example.Contacts.ServiceTest - Started ServiceTest in 15.822 seconds (JVM running for 17.803)
+""2022-12-14 08:59:58 [http-nio-8080-exec-9] INFO  c.example.Contacts.aop.LogUserAspect - before execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 08:59:58 [http-nio-8080-exec-9] INFO  c.example.Contacts.aop.LogUserAspect - after execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 08:59:58 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 08:59:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2022-12-14 08:59:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2022-12-14 09:00:02 [http-nio-8080-exec-2] INFO  c.example.Contacts.aop.LogUserAspect - before execution(List com.example.Contacts.service.UserService.findAll())
+""2022-12-14 09:00:02 [http-nio-8080-exec-2] INFO  c.example.Contacts.aop.LogUserAspect - after execution(List com.example.Contacts.service.UserService.findAll())
+""2022-12-14 09:08:01 [http-nio-8080-exec-9] INFO  c.example.Contacts.aop.LogUserAspect - before execution(boolean com.example.Contacts.service.UserService.addUser(ContactsUsers))
+""2022-12-14 09:08:01 [http-nio-8080-exec-9] INFO  c.e.Contacts.aop.MailSenderAspect - before execution(void com.example.Contacts.service.MailSender.send(String,String,String))
+""2022-12-14 09:08:07 [http-nio-8080-exec-9] INFO  c.e.Contacts.aop.MailSenderAspect - after execution(void com.example.Contacts.service.MailSender.send(String,String,String))
+""2022-12-14 09:08:07 [http-nio-8080-exec-9] INFO  c.example.Contacts.aop.LogUserAspect - after execution(boolean com.example.Contacts.service.UserService.addUser(ContactsUsers))
+""2022-12-14 09:08:13 [http-nio-8080-exec-1] INFO  c.example.Contacts.aop.LogUserAspect - before execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 09:08:13 [http-nio-8080-exec-1] INFO  c.example.Contacts.aop.LogUserAspect - after execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 09:08:28 [http-nio-8080-exec-3] INFO  c.example.Contacts.aop.LogUserAspect - before execution(boolean com.example.Contacts.service.UserService.activateUser(String))
+""2022-12-14 09:08:28 [http-nio-8080-exec-3] INFO  c.example.Contacts.aop.LogUserAspect - after execution(boolean com.example.Contacts.service.UserService.activateUser(String))
+""2022-12-14 09:08:34 [http-nio-8080-exec-4] INFO  c.example.Contacts.aop.LogUserAspect - before execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 09:08:34 [http-nio-8080-exec-4] INFO  c.example.Contacts.aop.LogUserAspect - after execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 09:09:08 [http-nio-8080-exec-6] INFO  c.example.Contacts.aop.LogUserAspect - before execution(void com.example.Contacts.service.UserService.updateProfile(ContactsUsers,String,String))
+""2022-12-14 09:09:08 [http-nio-8080-exec-6] INFO  c.example.Contacts.aop.LogUserAspect - after execution(void com.example.Contacts.service.UserService.updateProfile(ContactsUsers,String,String))
+""2022-12-14 09:09:37 [http-nio-8080-exec-10] INFO  c.example.Contacts.aop.LogUserAspect - before execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 09:09:37 [http-nio-8080-exec-10] INFO  c.example.Contacts.aop.LogUserAspect - after execution(UserDetails com.example.Contacts.service.UserService.loadUserByUsername(String))
+""2022-12-14 09:09:39 [http-nio-8080-exec-2] INFO  c.example.Contacts.aop.LogUserAspect - before execution(List com.example.Contacts.service.UserService.findAll())
+""2022-12-14 09:09:39 [http-nio-8080-exec-2] INFO  c.example.Contacts.aop.LogUserAspect - after execution(List com.example.Contacts.service.UserService.findAll())
+""2022-12-14 09:09:45 [http-nio-8080-exec-5] INFO  c.example.Contacts.aop.LogUserAspect - before execution(void com.example.Contacts.service.UserService.saveUser(ContactsUsers,String,Map))
+""2022-12-14 09:09:45 [http-nio-8080-exec-5] INFO  c.example.Contacts.aop.LogUserAspect - after execution(void com.example.Contacts.service.UserService.saveUser(ContactsUsers,String,Map))
+""2022-12-14 09:09:45 [http-nio-8080-exec-6] INFO  c.example.Contacts.aop.LogUserAspect - before execution(List com.example.Contacts.service.UserService.findAll())
+""2022-12-14 09:09:45 [http-nio-8080-exec-6] INFO  c.example.Contacts.aop.LogUserAspect - after execution(List com.example.Contacts.service.UserService.findAll())
+""2022-12-14 09:10:41 [main] INFO  com.example.Contacts.ServiceTest - Starting ServiceTest using Java 17.0.5 on IT8N with PID 17092 (started by Administrator in C:\Users\Administrator\Desktop\Contacts)
+""2022-12-14 09:10:41 [main] INFO  com.example.Contacts.ServiceTest - No active profile set, falling back to 1 default profile: "default"
+""2022-12-14 09:10:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-12-14 09:10:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 107 ms. Found 2 JPA repository interfaces.
+""2022-12-14 09:10:45 [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+""2022-12-14 09:10:45 [main] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+""2022-12-14 09:10:45 [main] INFO  o.f.c.i.license.VersionPrinter - 
+""2022-12-14 09:10:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2022-12-14 09:10:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2022-12-14 09:10:46 [main] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:postgresql://localhost/contacts (PostgreSQL 14.6)
+""2022-12-14 09:10:46 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.052s)
+""2022-12-14 09:10:46 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
+""2022-12-14 09:10:46 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+""2022-12-14 09:10:46 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-12-14 09:10:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.11.Final
+""2022-12-14 09:10:47 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-12-14 09:10:47 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+""2022-12-14 09:10:49 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-12-14 09:10:49 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 09:10:49 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-12-14 09:10:50 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@165a5979, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ea40c9f, org.springframework.security.web.context.SecurityContextPersistenceFilter@116efe65, org.springframework.security.web.header.HeaderWriterFilter@24ce5d4c, org.springframework.security.web.csrf.CsrfFilter@496c6d94, org.springframework.security.web.authentication.logout.LogoutFilter@4fc84c92, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@57777c23, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4bec6682, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f24e33d, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@1d5958d3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d782a4a, org.springframework.security.web.session.SessionManagementFilter@7ba623d1, org.springframework.security.web.access.ExceptionTranslationFilter@8de4206, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24bdd996]
+""2022-12-14 09:10:54 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+""2022-12-14 09:10:54 [main] INFO  com.example.Contacts.ServiceTest - Started ServiceTest in 13.714 seconds (JVM running for 15.689)
+""2022-12-14 09:10:55 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 09:10:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2022-12-14 09:10:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2022-12-14 09:13:11 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-12-14 09:13:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+""2022-12-14 09:13:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+"

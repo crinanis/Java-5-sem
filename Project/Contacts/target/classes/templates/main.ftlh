@@ -10,74 +10,9 @@
         </form>
     </div>
 
-    <a class="btn btn-primary mt-2 mb-2" data-toggle="collapse" href="#collapseExample" role="button"
-       aria-expanded="false" style="background-color: #7c7698;border: 0;">
-        Add new contact
-    </a>
+    <#include "parts/contactsEdit.ftlh" />
 
-    <div class="collapse <#if contactList??>show</#if>" id="collapseExample">
-        <div class="form-group mt-3">
-            <form method="post" enctype="multipart/form-data">
+    <#include "parts/contactsList.ftlh" />
 
-                <div class="form-group">
-                    <input type="text"
-                           required name="contactName"
-                           class="form-control ${(textError??)?string('is-invalid', '')}"
-                           value="<#if contactList??>${contactList.contactName}</#if>"
-                           placeholder="Name"
-                    />
-                    <#if textError??>
-                        <div class="invalid-feedback">
-                            ${textError}
-                        </div>
-                    </#if>
-                </div>
-
-                <div class="form-group">
-                    <input type="text"
-                           required name="contactNumber"
-                           class="form-control ${(textError??)?string('is-invalid', '')}"
-                           value="<#if contactList??>${contactList.contactNumber}</#if>"
-                           placeholder="Number"
-                    />
-                    <#if textError??>
-                        <div class="invalid-feedback">
-                            ${textError}
-                        </div>
-                    </#if>
-                </div>
-
-                <div class="form-group">
-                    <div class="custom-file">
-                        <input type="file" name="file" id="customFile">
-                        <label class="custom-file-label" for="customFile">Choose file</label>
-                    </div>
-                </div>
-                <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-                <div class="form-group">
-                    <button class="btn btn-primary" type="submit" style="background-color: #7c7698;border: 0;">Add
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <div class="card-columns">
-        <#list contacts as contact>
-            <div class="card my-3">
-                <#if contact.filename??>
-                    <img class="card-img-top" width="50" height="50" src="/img/${contact.filename}">
-                </#if>
-                <div class="m-2">
-                    <i>${contact.contactName}</i>
-                    <span>${contact.contactNumber}</span>
-                </div>
-                <div class="card-footer text-muted">
-                    ${contact.ownerName}
-                </div>
-            </div>
-        <#else>
-            No contacts
-        </#list>
     </div>
 </@c.page>

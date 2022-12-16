@@ -1,7 +1,7 @@
 package com.example.Contacts.controller;
 
-import com.example.Contacts.domain.ContactsUsers;
-import com.example.Contacts.domain.Role;
+import com.example.Contacts.domain.dto.ContactsUsers;
+import com.example.Contacts.domain.dto.Role;
 import com.example.Contacts.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
